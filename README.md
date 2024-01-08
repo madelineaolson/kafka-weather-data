@@ -8,8 +8,6 @@ The goal of this project is to implement a Kafka-based system for processing dai
 
 **Kafka Producer (producer.py):** The producer initializes a "temperatures" topic with 4 partitions and 1 replica. It uses a gRPC protobuf to encode the weather data and publishes it to the Kafka stream with specific settings for retries and acknowledgment.
 
-**Kafka Debug Consumer (debug.py):** The debug consumer subscribes to the "temperatures" topic, automatically assigns partitions, and continuously prints dictionaries corresponding to each received message. It helps verify the proper functioning of the producer.
-
 **Kafka Stats Consumer (consumer.py):** The stats consumer uses manual partition assignment, processes messages, and computes statistics on the "temperatures" topic. It updates JSON files for each partition with information on count, sum, average, start date, and end date for each month and year combination.
 
 **Plotting Stats (plot.py):** The plotting program generates a visual representation of average max-temperatures for specific months based on the recorded data. It produces an SVG file displaying the average max-temperature for each month.
