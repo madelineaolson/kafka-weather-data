@@ -1,4 +1,4 @@
-# Kafka Weather Data Streaming
+# Kafka Streaming for Weather Data
 
 ## Objective:
 The goal of this project is to implement a Kafka-based system for processing daily weather data. The key objectives include writing producer and consumer Python programs, applying streaming techniques to achieve "exactly once" semantics, and using both manual and automatic assignment of Kafka topics and partitions. After streaming data, collect in a JSON file for use in a web dashboard where a real-time graph can be generated. 
